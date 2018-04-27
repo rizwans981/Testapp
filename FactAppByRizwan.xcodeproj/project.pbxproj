@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9ED42D6A2092DE5100DA888F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D692092DE5100DA888F /* AppDelegate.m */; };
+		9ED42D722092DE5100DA888F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED42D712092DE5100DA888F /* Assets.xcassets */; };
+		9ED42D752092DE5100DA888F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED42D732092DE5100DA888F /* LaunchScreen.storyboard */; };
+		9ED42D782092DE5100DA888F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D772092DE5100DA888F /* main.m */; };
+		9ED42D822092DE5100DA888F /* FactAppByRizwanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D812092DE5100DA888F /* FactAppByRizwanTests.m */; };
+		9ED42D902092DF1000DA888F /* FactDetailsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D8F2092DF1000DA888F /* FactDetailsRouter.m */; };
+		9ED42D912092DF1000DA888F /* FactDetailsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D8F2092DF1000DA888F /* FactDetailsRouter.m */; };
+		9ED42D962092E0A800DA888F /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D952092E0A800DA888F /* Fact.m */; };
+		9ED42D972092E0A800DA888F /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D952092E0A800DA888F /* Fact.m */; };
+		9ED42D9A2092E14C00DA888F /* FactRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D992092E14C00DA888F /* FactRow.m */; };
+		9ED42D9B2092E14C00DA888F /* FactRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D992092E14C00DA888F /* FactRow.m */; };
+		9ED42DA02092E22700DA888F /* FactDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D9F2092E22700DA888F /* FactDetailsView.m */; };
+		9ED42DA12092E22700DA888F /* FactDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42D9F2092E22700DA888F /* FactDetailsView.m */; };
+		9ED42DA42092E2B300DA888F /* FactRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42DA32092E2B300DA888F /* FactRowCell.m */; };
+		9ED42DA52092E2B300DA888F /* FactRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42DA32092E2B300DA888F /* FactRowCell.m */; };
+		9ED42DAE2092E45300DA888F /* FactDetailsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42DAD2092E45300DA888F /* FactDetailsInteractor.m */; };
+		9ED42DAF2092E45300DA888F /* FactDetailsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42DAD2092E45300DA888F /* FactDetailsInteractor.m */; };
+		9ED42DB42092E53300DA888F /* FactDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42DB32092E53300DA888F /* FactDetailsPresenter.m */; };
+		9ED42DB52092E53300DA888F /* FactDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED42DB32092E53300DA888F /* FactDetailsPresenter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ED42D7E2092DE5100DA888F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ED42D5D2092DE5100DA888F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ED42D642092DE5100DA888F;
+			remoteInfo = FactAppByRizwan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9ED42D652092DE5100DA888F /* FactAppByRizwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactAppByRizwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED42D682092DE5100DA888F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9ED42D692092DE5100DA888F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9ED42D712092DE5100DA888F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED42D742092DE5100DA888F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9ED42D762092DE5100DA888F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED42D772092DE5100DA888F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ED42D7D2092DE5100DA888F /* FactAppByRizwanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactAppByRizwanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED42D812092DE5100DA888F /* FactAppByRizwanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactAppByRizwanTests.m; sourceTree = "<group>"; };
+		9ED42D832092DE5100DA888F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED42D8E2092DF1000DA888F /* FactDetailsRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactDetailsRouter.h; sourceTree = "<group>"; };
+		9ED42D8F2092DF1000DA888F /* FactDetailsRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactDetailsRouter.m; sourceTree = "<group>"; };
+		9ED42D942092E0A800DA888F /* Fact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fact.h; sourceTree = "<group>"; };
+		9ED42D952092E0A800DA888F /* Fact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fact.m; sourceTree = "<group>"; };
+		9ED42D982092E14C00DA888F /* FactRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactRow.h; sourceTree = "<group>"; };
+		9ED42D992092E14C00DA888F /* FactRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactRow.m; sourceTree = "<group>"; };
+		9ED42D9E2092E22700DA888F /* FactDetailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactDetailsView.h; sourceTree = "<group>"; };
+		9ED42D9F2092E22700DA888F /* FactDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactDetailsView.m; sourceTree = "<group>"; };
+		9ED42DA22092E2B300DA888F /* FactRowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactRowCell.h; sourceTree = "<group>"; };
+		9ED42DA32092E2B300DA888F /* FactRowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactRowCell.m; sourceTree = "<group>"; };
+		9ED42DAC2092E45300DA888F /* FactDetailsInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactDetailsInteractor.h; sourceTree = "<group>"; };
+		9ED42DAD2092E45300DA888F /* FactDetailsInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactDetailsInteractor.m; sourceTree = "<group>"; };
+		9ED42DB22092E53300DA888F /* FactDetailsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactDetailsPresenter.h; sourceTree = "<group>"; };
+		9ED42DB32092E53300DA888F /* FactDetailsPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactDetailsPresenter.m; sourceTree = "<group>"; };
+		9ED42DB62092E66100DA888F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED42D622092DE5100DA888F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED42D7A2092DE5100DA888F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ED42D5C2092DE5100DA888F = {
+			isa = PBXGroup;
+			children = (
+				9ED42D672092DE5100DA888F /* FactAppByRizwan */,
+				9ED42D802092DE5100DA888F /* FactAppByRizwanTests */,
+				9ED42D662092DE5100DA888F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ED42D662092DE5100DA888F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D652092DE5100DA888F /* FactAppByRizwan.app */,
+				9ED42D7D2092DE5100DA888F /* FactAppByRizwanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ED42D672092DE5100DA888F /* FactAppByRizwan */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D8C2092DEB000DA888F /* Routers */,
+				9ED42D922092E09200DA888F /* Entities */,
+				9ED42D9C2092E20300DA888F /* Views */,
+				9ED42DA62092E35500DA888F /* Interactors */,
+				9ED42DB02092E4FD00DA888F /* Presenters */,
+				9ED42D682092DE5100DA888F /* AppDelegate.h */,
+				9ED42D692092DE5100DA888F /* AppDelegate.m */,
+				9ED42D712092DE5100DA888F /* Assets.xcassets */,
+				9ED42D732092DE5100DA888F /* LaunchScreen.storyboard */,
+				9ED42D762092DE5100DA888F /* Info.plist */,
+				9ED42D772092DE5100DA888F /* main.m */,
+				9ED42DB62092E66100DA888F /* Constants.h */,
+			);
+			path = FactAppByRizwan;
+			sourceTree = "<group>";
+		};
+		9ED42D802092DE5100DA888F /* FactAppByRizwanTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D812092DE5100DA888F /* FactAppByRizwanTests.m */,
+				9ED42D832092DE5100DA888F /* Info.plist */,
+			);
+			path = FactAppByRizwanTests;
+			sourceTree = "<group>";
+		};
+		9ED42D8C2092DEB000DA888F /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D8D2092DEDF00DA888F /* Fact Details Router */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9ED42D8D2092DEDF00DA888F /* Fact Details Router */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D8E2092DF1000DA888F /* FactDetailsRouter.h */,
+				9ED42D8F2092DF1000DA888F /* FactDetailsRouter.m */,
+			);
+			path = "Fact Details Router";
+			sourceTree = "<group>";
+		};
+		9ED42D922092E09200DA888F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D932092E09200DA888F /* Fact */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9ED42D932092E09200DA888F /* Fact */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D942092E0A800DA888F /* Fact.h */,
+				9ED42D952092E0A800DA888F /* Fact.m */,
+				9ED42D982092E14C00DA888F /* FactRow.h */,
+				9ED42D992092E14C00DA888F /* FactRow.m */,
+			);
+			path = Fact;
+			sourceTree = "<group>";
+		};
+		9ED42D9C2092E20300DA888F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D9D2092E20300DA888F /* Fact Details View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9ED42D9D2092E20300DA888F /* Fact Details View */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42D9E2092E22700DA888F /* FactDetailsView.h */,
+				9ED42D9F2092E22700DA888F /* FactDetailsView.m */,
+				9ED42DA22092E2B300DA888F /* FactRowCell.h */,
+				9ED42DA32092E2B300DA888F /* FactRowCell.m */,
+			);
+			path = "Fact Details View";
+			sourceTree = "<group>";
+		};
+		9ED42DA62092E35500DA888F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42DA72092E35500DA888F /* Fact Details Interactor */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9ED42DA72092E35500DA888F /* Fact Details Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42DAC2092E45300DA888F /* FactDetailsInteractor.h */,
+				9ED42DAD2092E45300DA888F /* FactDetailsInteractor.m */,
+			);
+			path = "Fact Details Interactor";
+			sourceTree = "<group>";
+		};
+		9ED42DB02092E4FD00DA888F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42DB12092E4FD00DA888F /* Fact Details Presenter */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9ED42DB12092E4FD00DA888F /* Fact Details Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9ED42DB22092E53300DA888F /* FactDetailsPresenter.h */,
+				9ED42DB32092E53300DA888F /* FactDetailsPresenter.m */,
+			);
+			path = "Fact Details Presenter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED42D642092DE5100DA888F /* FactAppByRizwan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED42D862092DE5100DA888F /* Build configuration list for PBXNativeTarget "FactAppByRizwan" */;
+			buildPhases = (
+				9ED42D612092DE5100DA888F /* Sources */,
+				9ED42D622092DE5100DA888F /* Frameworks */,
+				9ED42D632092DE5100DA888F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FactAppByRizwan;
+			productName = FactAppByRizwan;
+			productReference = 9ED42D652092DE5100DA888F /* FactAppByRizwan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9ED42D7C2092DE5100DA888F /* FactAppByRizwanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED42D892092DE5100DA888F /* Build configuration list for PBXNativeTarget "FactAppByRizwanTests" */;
+			buildPhases = (
+				9ED42D792092DE5100DA888F /* Sources */,
+				9ED42D7A2092DE5100DA888F /* Frameworks */,
+				9ED42D7B2092DE5100DA888F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ED42D7F2092DE5100DA888F /* PBXTargetDependency */,
+			);
+			name = FactAppByRizwanTests;
+			productName = FactAppByRizwanTests;
+			productReference = 9ED42D7D2092DE5100DA888F /* FactAppByRizwanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ED42D5D2092DE5100DA888F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Fact;
+				TargetAttributes = {
+					9ED42D642092DE5100DA888F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9ED42D7C2092DE5100DA888F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9ED42D642092DE5100DA888F;
+					};
+				};
+			};
+			buildConfigurationList = 9ED42D602092DE5100DA888F /* Build configuration list for PBXProject "FactAppByRizwan" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ED42D5C2092DE5100DA888F;
+			productRefGroup = 9ED42D662092DE5100DA888F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ED42D642092DE5100DA888F /* FactAppByRizwan */,
+				9ED42D7C2092DE5100DA888F /* FactAppByRizwanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ED42D632092DE5100DA888F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED42D752092DE5100DA888F /* LaunchScreen.storyboard in Resources */,
+				9ED42D722092DE5100DA888F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED42D7B2092DE5100DA888F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ED42D612092DE5100DA888F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED42DA42092E2B300DA888F /* FactRowCell.m in Sources */,
+				9ED42DAE2092E45300DA888F /* FactDetailsInteractor.m in Sources */,
+				9ED42D902092DF1000DA888F /* FactDetailsRouter.m in Sources */,
+				9ED42DB42092E53300DA888F /* FactDetailsPresenter.m in Sources */,
+				9ED42DA02092E22700DA888F /* FactDetailsView.m in Sources */,
+				9ED42D782092DE5100DA888F /* main.m in Sources */,
+				9ED42D9A2092E14C00DA888F /* FactRow.m in Sources */,
+				9ED42D6A2092DE5100DA888F /* AppDelegate.m in Sources */,
+				9ED42D962092E0A800DA888F /* Fact.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED42D792092DE5100DA888F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED42D822092DE5100DA888F /* FactAppByRizwanTests.m in Sources */,
+				9ED42D972092E0A800DA888F /* Fact.m in Sources */,
+				9ED42DA52092E2B300DA888F /* FactRowCell.m in Sources */,
+				9ED42DAF2092E45300DA888F /* FactDetailsInteractor.m in Sources */,
+				9ED42D9B2092E14C00DA888F /* FactRow.m in Sources */,
+				9ED42DB52092E53300DA888F /* FactDetailsPresenter.m in Sources */,
+				9ED42DA12092E22700DA888F /* FactDetailsView.m in Sources */,
+				9ED42D912092DF1000DA888F /* FactDetailsRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ED42D7F2092DE5100DA888F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ED42D642092DE5100DA888F /* FactAppByRizwan */;
+			targetProxy = 9ED42D7E2092DE5100DA888F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9ED42D732092DE5100DA888F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ED42D742092DE5100DA888F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9ED42D842092DE5100DA888F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9ED42D852092DE5100DA888F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ED42D872092DE5100DA888F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY36H97WEX;
+				INFOPLIST_FILE = FactAppByRizwan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fact.FactAppByRizwan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ED42D882092DE5100DA888F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY36H97WEX;
+				INFOPLIST_FILE = FactAppByRizwan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fact.FactAppByRizwan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9ED42D8A2092DE5100DA888F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY36H97WEX;
+				INFOPLIST_FILE = FactAppByRizwanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fact.FactAppByRizwanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactAppByRizwan.app/FactAppByRizwan";
+			};
+			name = Debug;
+		};
+		9ED42D8B2092DE5100DA888F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY36H97WEX;
+				INFOPLIST_FILE = FactAppByRizwanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fact.FactAppByRizwanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FactAppByRizwan.app/FactAppByRizwan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ED42D602092DE5100DA888F /* Build configuration list for PBXProject "FactAppByRizwan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED42D842092DE5100DA888F /* Debug */,
+				9ED42D852092DE5100DA888F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED42D862092DE5100DA888F /* Build configuration list for PBXNativeTarget "FactAppByRizwan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED42D872092DE5100DA888F /* Debug */,
+				9ED42D882092DE5100DA888F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED42D892092DE5100DA888F /* Build configuration list for PBXNativeTarget "FactAppByRizwanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED42D8A2092DE5100DA888F /* Debug */,
+				9ED42D8B2092DE5100DA888F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ED42D5D2092DE5100DA888F /* Project object */;
+}
