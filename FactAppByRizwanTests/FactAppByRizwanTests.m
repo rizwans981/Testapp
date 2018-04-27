@@ -39,7 +39,7 @@
 {
     //Testing Fact is retieving or not
     [_factDetailsInteractor retrieveFactWithCompletionHandler:^(Fact *factDetails, NSError *error) {
-        XCTAssertNil(factDetails,"Fact details getting nil");
+        XCTAssertNotNil(factDetails,"Fact details getting nil");
     }];
 }
 -(void)testLoadImage
