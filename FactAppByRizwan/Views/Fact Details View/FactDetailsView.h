@@ -19,4 +19,6 @@
 -(void)hideLoading;
 
 -(void)showFactDetails:(Fact *)factDetails;
+
+-(void)showAlertController;
 @end

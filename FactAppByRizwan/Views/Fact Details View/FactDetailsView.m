@@ -131,6 +131,42 @@ static NSString *FactCellIdentifier = @"FactCellIdentifier";
     
     [self.tableView reloadData];
 }
-
+#pragma mark Show Alert
+-(void)showAlertController
+{
+    
+        
+        
+        NSString *altMessage = @"Unable to find requested data, please try after some time.";
+        
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:@"Data not found"
+                                      message:altMessage
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"Ok"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                             
+                             [self.factDetailsPresenter viewDidLoad];
+                             
+                             }];
+        UIAlertAction* cancel = [UIAlertAction
+                                 actionWithTitle:@"Cancel"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                 
+                                 [alert dismissViewControllerAnimated:YES completion:nil];
+                                 
+                                 }];
+        
+        [alert addAction:cancel];
+        [alert addAction:ok];
+        [self presentViewController:alert animated:YES completion:nil];
+    
+}
 @end
 

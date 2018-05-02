@@ -20,6 +20,14 @@
                 [self.factDetailsView showFactDetails:factDetails];
             });
         }
+        else
+            {
+            //-- Error Handling mechanism ---//
+            
+            [self.factDetailsView hideLoading];
+            
+            [self.factDetailsView showAlertController];
+            }
     }];
 }
 
