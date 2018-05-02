@@ -23,10 +23,11 @@
         else
             {
             //-- Error Handling mechanism ---//
-            
-            [self.factDetailsView hideLoading];
-            
-            [self.factDetailsView showAlertController];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.factDetailsView hideLoading];
+                
+                [self.factDetailsView showAlertController];
+            });
             }
     }];
 }

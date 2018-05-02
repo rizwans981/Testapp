@@ -16,19 +16,27 @@
         NSURLSession *session = [NSURLSession sharedSession];
         NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:FACT_URL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             NSError *jsonError = nil;
-            //converting data into valid encoding format
-            NSString *responseString = [[[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] stringByReplacingOccurrencesOfString:@"\t" withString:@""] stringByReplacingOccurrencesOfString:@"\0" withString:@""];
-            NSData *resData = [responseString dataUsingEncoding:NSUTF8StringEncoding];
-            //Parsing response
-            NSMutableDictionary *factDetails = [NSJSONSerialization JSONObjectWithData:resData options:0 error:&jsonError];
-            
-            if (factDetails) {
-                Fact *fact = [[Fact alloc] initWithDetails:factDetails];
-                completionHandler(fact,nil);
-            }else if (jsonError) {
-                completionHandler(nil,jsonError);
-            }
+            NSHTTPURLResponse *urlResponse = (NSHTTPURLResponse *) response;
+            if (urlResponse.statusCode == 200)
+                {
+                //converting data into valid encoding format
+                NSString *responseString = [[[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] stringByReplacingOccurrencesOfString:@"\t" withString:@""] stringByReplacingOccurrencesOfString:@"\0" withString:@""];
+                NSData *resData = [responseString dataUsingEncoding:NSUTF8StringEncoding];
+                //Parsing response
+                NSMutableDictionary *factDetails = [NSJSONSerialization JSONObjectWithData:resData options:0 error:&jsonError];
+                
+                if (factDetails) {
+                    Fact *fact = [[Fact alloc] initWithDetails:factDetails];
+                    completionHandler(fact,nil);
+                }
+                else if (jsonError) {
+                    completionHandler(nil,jsonError);
+                }
+                
+                }
             else{
+                
+                //-- Error Handling mechanism ---//
                 completionHandler(nil,error);
             }
         }];
