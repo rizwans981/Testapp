@@ -177,8 +177,9 @@ static NSString *FactCellIdentifier = @"FactCellIdentifier";
 #pragma mark refresh tableview
 -(void)handleRefresh:(UIRefreshControl *)control
 {
+    [fact.rows removeAllObjects];
+    fact.title = nil;
     fact = nil;
-    
 [self.factDetailsPresenter viewDidLoad];
     
     
