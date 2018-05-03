@@ -15,6 +15,7 @@
 {
     UIActivityIndicatorView *spinner;
     Fact *fact;
+    UIRefreshControl *refreshControl;
 }
 @end
 
@@ -45,6 +46,10 @@ static NSString *FactCellIdentifier = @"FactCellIdentifier";
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
     [self.tableView registerClass:[FactRowCell class] forCellReuseIdentifier:FactCellIdentifier];
+    
+     refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refreshControl];
     
     [self.tableView reloadData];
     
@@ -118,6 +123,7 @@ static NSString *FactCellIdentifier = @"FactCellIdentifier";
 #pragma mark - Hiding Spinner
 -(void)hideLoading
 {
+    [refreshControl endRefreshing];
     [spinner setHidden:YES];
     
     [spinner stopAnimating];
@@ -166,6 +172,15 @@ static NSString *FactCellIdentifier = @"FactCellIdentifier";
         [alert addAction:cancel];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
+    
+}
+#pragma mark refresh tableview
+-(void)handleRefresh:(UIRefreshControl *)control
+{
+    fact = nil;
+    
+[self.factDetailsPresenter viewDidLoad];
+    
     
 }
 @end
